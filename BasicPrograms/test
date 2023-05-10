@@ -1,0 +1,16 @@
+nnnn
+
+
+empid, name , designation, salary, department
+
+
+
+list of emp between 70000 and 1000000
+
+dpart prodcuion
+
+
+
+
+select * from emp where salary between 70000 and 100000 order by depatment production ;
+
