@@ -1,0 +1,41 @@
+Write a query to fetch all data from Employee table ------------- Select * from Employee
+
+
+Write a Query to fetch details of male employees -----------------Select * from Employee where gender = male
+
+ Write a Query to find Max Salary from each department -----------Select depart, MAX(SALARY) from Employee group by Depart
+ Write a Query to print the name of distinct employee whose Salary is between 30000 to 35000------- 
+ Select Distinct (firstname) from Emp where salay BETWEEN 30000 AND 35000;
+ 
+Write a Query to find employee whose Salary is equal or greater than 40000 --Select firstname from Employee where  Salary >= 40000; 
+
+Write a Query to find name of employee whose name Start with ‘S’  ------Select * from employee where firstname ='s';
+
+ Write a Query to find maximum salary for a lady employee--Select * from Employee where Salary IN (Select Max(Salary) from Employee where gender = female);
+ 
+ Write a Query to get nth(3rd) Highest Salary?-Select MIN(Salary) from ( select Salary  form employee ORDER BY salary DESC offset 0  rows fetch next 3 rows only )
+ 
+ 
+ Write a Query to get nth(3rd) Lowest Salary-Select MAX(Salary) from ( select Salary  form employee ORDER BY salary ASC offset 0  rows fetch next 3 rows only )
+ 
+  Write a Query to Insert a new employee details--Insert into Employee values (1, "Yogesh","9742755150" );
+  
+  Update salary of emplyee---Update Employee set Salary=40000 where firstname=rashika;
+  
+  
+  Delete details Deepak from emp details--Delete from Employee where empname=Deepak;
+  
+  
+  Fetch all details from both the tables emp cmp---select * from Employee emp , Company cmp  where emp.EMP_ID =cmp.EMPlOYEEID
+  
+ 
+  
+ NNER JOIN -----Select * from Employee
+INNERJOIN Company
+ON EMPLOYEE.EMP_ID=  Company.EMP_ID
+
+
+
+
+Second highest salary from employee--  select *from employee where salary=(select Max(salary) from employee);
+
