@@ -43,6 +43,48 @@ A.Delete from Employee where empname=Deepak;
   
 13.Fetch all details from both the tables emp cmp---
 A.select * from Employee emp , Company cmp  where emp.EMP_ID =cmp.EMPlOYEEID
+
+14 BETWEEN query
+
+A.SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+
+15.secocnd highest salary from emplyee
+A.1.SELECT MAX(SALARY) FROM Employee WHERE SALARY < (SELECT MAX(SALARY) FROM Employee);
+
+2. SELECT MAX(Salary) FROM Employee WHERE Salary NOT IN (select MAX(Salary) from Employee ); 
+
+
+3.SELECT MAX(SALARY) FROM employees WHERE SALARY < (SELECT MAX(SALARY) FROM employees);
+
+16.second loweset salary from emplyee 
+A.1 SELECT * FROM employees m WHERE  2 = (SELECT COUNT(DISTINCT salary ) FROM employee WHERE  salary <= m.salary);
+
+2. SELECT * FROM employees m WHERE  2 = (SELECT COUNT(DISTINCT salary ) FROM employees WHERE  salary <= m.salary);
+
+17 like query
+A.SELECT * FROM EmployeeInfo WHERE Empname LIKE 'S%';
+
+18.fetch all emp details gender male
+A.select * from employee where gender= "Male":
+
+19.max salary fo a each department
+
+A.select department , max(salary ) from employee group by department ;
+
+20.query find salary equal or greater than 40000
+
+A.select * from employee where salary >= 40000;
+
+21. Salary of female employee
+
+A.select * from employee where salary in (select Max(salary ) from employee where gender = female)
+
+22.name of distinct employee name salary between 30000 and 35000
+
+A.select Distinct (firstname) from employee where salary between 30000 and 35000:
+
+23.
+
   
  
 INNER JOIN -----
