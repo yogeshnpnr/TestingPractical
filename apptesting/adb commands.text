@@ -31,3 +31,32 @@ adb reboot
 adb logcat
 adb push 
 adb pull
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+1. “adb install -r <app name.apk>” – This command allows you to re-install or update an existing app. Take for example you already have an app installed on your device but you wish to update the app using the latest APK file for the app. It is also useful when a system app is corrupted and you need to replace the corrupted app using its APK file.
+
+2. “adb install -s <app name.apk>” – This command allows you to install an app on your SD card provided the app is compatible to be installed on the SD card and also if your device allows apps to be installed on the SD card.
+
+3. “adb uninstall <app name.apk>” – This command allows you to uninstall an app from your device, However, one thing that needs to be kept in mind is that you need to type in the entire package name while uninstalling an app. For example, you need to write “com.instagram.android” in order to uninstall Instagram from your device.
+
+4. “adb logcat” – This command allows you to view the device’s log files.
+
+5. “adb shell” – This command allows you to open an interactive Linux command-line shell on your Android device.
+
+6. “adb push <file location path>/sdcard/<folder name>” – This command allows you to transfer some file on your computer to the SD card of your Android device. Here “file location path” stands for the pathway of the file on your computer and “folder name” is the directory where the file will get transferred on your Android device.
+
+7. “adb pull /sdcard/<file name><file location path>” – This command can be considered to be the reverse of push command. It allows you to transfer a file from your Android device to your computer. You need to type in the name of the file on your SD card in place of “filename”. Specify the location on your computer where you want to save the file in place of “file location path”.
+
+8. “adb reboot” – This command allows you to restart your device. You can also select to boot your device in bootloader by adding -bootloader after reboot. Some devices also allow you to directly boot into Recovery mode by typing “reboot recovery” instead of simply reboot.
+
+Elon
+Posted
+
+
+
