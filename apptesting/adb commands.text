@@ -22,3 +22,12 @@ adb push file.txt /sdcard/
 
 adb pull
 adb pull mnt/sdcard/Folder1/Folder2/Folder/*.jpg .
+adb install - r swiggy.apk
+adb install -s swiggy.apk
+adb uiinstall swiggy.apk 
+
+adb shell
+adb reboot
+adb logcat
+adb push 
+adb pull
