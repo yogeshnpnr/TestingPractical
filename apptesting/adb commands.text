@@ -1,0 +1,24 @@
+adb devices         
+adb devices -l        
+adb root         Restarts adbd with root permissions
+adb start-server         Starts the adb server
+adb kill-server         Kills the adb server
+adb remount         Remounts file system with read/write access
+adb reboot         Reboots the device
+adb reboot bootloader         Reboots the device into fastboot
+adb disable-verity
+
+adb install -r 
+adb install com.facebook.katana.apk
+adb install –k <add the path of the .APK file on your computer>
+adb uninstall com.facebook.katana
+adb logcat -c // clear //
+
+adb logcat -d > [path_to_file] //
+
+adb push. - adb push C:\my-location\data\. /storage/emulated/0/Android/data
+adb push file.txt /sdcard/
+
+
+adb pull
+adb pull mnt/sdcard/Folder1/Folder2/Folder/*.jpg .
