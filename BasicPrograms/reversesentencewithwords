@@ -1,0 +1,14 @@
+public class ReverseWords {
+    public static void main(String[] args) {
+        String sentence = "my name is yogesh";
+        String[] words = sentence.split(" "); // Split the sentence into words
+
+        StringBuilder reversedSentence = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            reversedSentence.append(words[i]).append(" "); // Append each word in reverse order
+        }
+
+        String reversedString = reversedSentence.toString().trim(); // Remove trailing whitespace
+        System.out.println(reversedString);
+    }
+}
