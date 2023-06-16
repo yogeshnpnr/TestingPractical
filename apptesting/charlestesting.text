@@ -1,0 +1,51 @@
+Break point	"we can change the respones of api in app
+accoridng to our requriement
+
+click on structure doing right click doing  will get option of breakpoint in list
+
+
+proxy and >goto breakpoiint settings
+
+goto particular api and uncheck the request only we need to change respones
+
+
+Manupulation of response we can change pahadi cereals to test cerals"
+Throtling 	2g , 3g wifi
+repeat and 	"request api we can do 
+
+using repeat
+"
+repeat advance	"repeat we can do with 
+
+iteration
+concurrency
+delay
+
+repeat all api contains folder"
+rewrite	"tools> rewrite
+
+change the
+ response body yogesh to rakesh
+response status 200 to- 300
+header
+remove header
+host
+path URL
+
+in all places
+
+
+according to our req
+
+adding host , path , "
+	
+Map Local	"save api repsonse  in some folder in local system
+
+and run that api without acutally hittitng to server"
+Map remote	"change app host to different host
+mobilbasket to google.com
+navigation basically to acess api paths reomtly in charles"
+DNS spoofing	
+mirroring	
+allow 	
+block	
