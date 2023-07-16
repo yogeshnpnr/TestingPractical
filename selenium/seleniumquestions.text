@@ -1,0 +1,112 @@
+1. how to launc selenium web driver 
+
+A.  System.setProperty("webdriver.chrome.driver","c:\\chromedriver.exe"); 
+
+chrome  WebDriver  driver = new ChromeDriver();
+
+
+System.setProperty("webdriver.gecko.driver","c:\\chromedriver.exe"); 
+
+firefox  WebDriver  driver = new FirefoxDriver();
+
+
+
+
+
+
+
+2. is webdriver class or interface
+A.
+WebDriver is an interface and all the methods which are declared in Webdriver interface are implemented by the respective driver class.
+
+
+
+
+
+
+
+
+3.Diffence between get() and navigate() method
+
+A.driver. get("URL"); 
+
+1. web driver will wait until page had fully loaded before returning the  control to test the script
+2. it can not track the history of browser
+
+driver.navigate.to("");
+
+1.it is responsible the redirect the page and return immmeditly
+2.it can track history  so that we can perform  back and forth in browser like
+
+driver.navigate.refresh() , back(); , forward();
+
+
+
+
+4. title and currenturl 
+
+
+getTitle();
+getCurrentURL();
+
+5. LOCATORS   
+
+Basic------
+
+ID 
+BY Name
+BY class
+BY tag
+BY partial link text
+BY LINK TEXt
+
+
+Cusotmize --
+
+XPATH AND BY CSS
+
+
+driver.findElement(By.id("username")).sendKeys("yogeshg");
+
+
+
+6 FindElement single web element  and find elements return multiple web elements and list of web elements
+
+
+
+7  switch windows in selenium
+
+
+        String currentWindowHandle = driver.getWindowHandle();
+
+        driver.switchTo().window(currentWindowHandle);
+
+        driver.findElement(By.partialLinkText("")).click();
+
+
+8 
+
+
+       List<WebElement> elementList = driver.findElements(By.partialLinkText("Sauce"));
+
+
+        System.out.println("elemenzt size "+ elementList.size());
+
+
+
+      retun size()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
