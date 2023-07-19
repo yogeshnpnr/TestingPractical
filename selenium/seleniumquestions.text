@@ -100,6 +100,8 @@ driver.findElement(By.id("username")).sendKeys("yogeshg");
 
 
 
+https://github.com/prachicodestudio/SeleniumWithJava/blob/master/src/test/java/DemoTest/Test1/DoubleClick.java
+
 
 
 
