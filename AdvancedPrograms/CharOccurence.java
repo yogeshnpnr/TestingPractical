@@ -4,10 +4,10 @@ import java.util.Map;
 public class CharOccurence {
     public static void main(String[] args) {
         String str = "HELLO INDIA";
-        printCharFrequency(str);
+        CharAppear(str);
     }
 
-    public static void printCharFrequency(String str) {
+    public static void CharAppear(String str) {
         Map<Character, Integer> charCountMap = new HashMap<>();
 
         // Iterate through the string and count occurrences
