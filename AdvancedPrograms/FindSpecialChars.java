@@ -1,4 +1,4 @@
-public class SpecialCharsFind {
+public class FindSpecialChars {
     public static void main(String[] args) {
         String str = "Hello@World#2024!";
         System.out.print("Special Characters: ");
