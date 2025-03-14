@@ -1,18 +1,22 @@
 
 public class FindDuplicateNumberinArray {
-    public static void main(String[] args)
-    {
-        int[] arrayone = {1, 2, 5, 5, 6, 6, 7, 2};
+ 
+    public static void main(String[] args) {
 
-        for (int i = 0; i < arrayone.length-1; i++)
-        {
-            for (int j = i+1; j < arrayone.length; j++)
-            {
-                if ((arrayone[i] == arrayone[j]) && (i != j))
-                {
-                    System.out.println("Duplicate number : "+arrayone[j]);
+        int arr[] = new int[] {3,5,6,6,5,4};
+        //int[] arr = new int[]{4,4,4,4,4,1};
+
+        System.out.println("Duplicate elements in an array");
+
+        for(int i =0; i<arr.length;i++ ){
+
+            for (int j= i+1; j<arr.length;j++){
+
+                if (arr[i]==arr[j]){
+                    System.out.println("Duplicate Element : "+arr[j]);
                 }
             }
+
+            }
         }
-    }
 }
