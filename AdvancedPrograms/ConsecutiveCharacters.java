@@ -22,6 +22,6 @@ public class ConsecutiveCharacters {
 
 
 
-The program iterates through the string and checks if adjacent characters are the same.
-When a consecutive character pair is found, it prints the pair and skips the entire sequence using a while loop.
-This ensures each consecutive character sequence is printed only once, avoiding duplicate prints. ✅
+1.The program iterates through the string and checks if adjacent characters are the same.
+2.When a consecutive character pair is found, it prints the pair and skips the entire sequence using a while loop.
+3.This ensures each consecutive character sequence is printed only once, avoiding duplicate prints. ✅
