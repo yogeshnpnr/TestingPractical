@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class CommonElementsInArrays {
+public class PairCommonElementsInArrays {
     public static void findCommonElements(int[] arr1, int[] arr2) {
         Set<Integer> set = new HashSet<>();
         Set<Integer> common = new HashSet<>();
